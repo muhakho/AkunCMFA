@@ -63,16 +63,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - BiznetSSL
       - BiznetGRPC
-
+  
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - BiznetSSL
-      - BiznetGRPC
 
   - name: IKLAN
     type: select
@@ -143,3 +141,4 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+

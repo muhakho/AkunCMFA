@@ -64,6 +64,7 @@ proxy-groups:
     interval: 300
     proxies:
       - BiznetGRPC
+      - BiznetSSL
   
   - name: MIX-X
     type: fallback
@@ -71,6 +72,7 @@ proxy-groups:
     interval: 300
     proxies:
       - BiznetSSL
+      - BiznetGRPC
 
   - name: IKLAN
     type: select
@@ -141,4 +143,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
